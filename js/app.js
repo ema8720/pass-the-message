@@ -9,8 +9,12 @@ const message = document.getElementById('message');
 const value = message.value;
 
 if (value === '') {
-    console.log('empty value');
-    
+    // console.log('empty value');
+    const feedback = document.querySelector('.feedback')
+    feedback.classList.add('show');
+    setTimeout(function() {
+        feedback.classList.remove('show');
+    }, 2000);
 }
 
 
